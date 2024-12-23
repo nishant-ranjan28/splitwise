@@ -1,15 +1,20 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Sidebar from './components/Sidebar';
 import Dashboard from './components/Dashboard';
+import Header from './components/Header';
+import RightPanel from './components/RightPanel';
 
-function App() {
+const App = () => {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Dashboard />} />
-      </Routes>
-    </Router>
+    <div className="h-screen flex flex-col">
+      <Header />
+      <div className="flex flex-grow">
+        <Sidebar />
+        <Dashboard />
+        {/* <RightPanel /> */}
+      </div>
+    </div>
   );
-}
+};
 
 export default App;

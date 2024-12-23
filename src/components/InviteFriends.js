@@ -2,8 +2,8 @@ import React from 'react';
 
 const InviteFriends = () => {
   return (
-    <div className="mt-4">
-      <h3 className="text-gray-800 font-semibold mb-2">Invite Friends</h3>
+    <div>
+      <h3 className="text-gray-700 font-semibold mb-2">Invite Friends</h3>
       <input
         type="email"
         placeholder="Enter an email address"
